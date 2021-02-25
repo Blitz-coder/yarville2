@@ -1,21 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yarville</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="navbar">
-        <div class="container">
-            <h1 class="title">menu</h1>
+    <header class="header">
+
+        <div class="container header-container">
+            <div class="header-logo">
+                <a class="header-logo__link" href="#">
+                    <img class="header-logo__img" src="img/yarville-logo-head.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-infobox">
+                <div class="header-infobox__address">Адрес</div>
+                <div class="header-infobox__schedule">График</div>
+                <div class="header-infobox__contact">Контакты</div>
+            </div>
+            <!-- /.infobox -->
+            <div class="header-toggle"></div>
         </div>
+
+        <!-- Menu -->
+        <div class="navbar">
+            <div class="container navbar-container">
+                <ul class="navbar-menu">
+                    <li class="navbar-menu__item">
+                        <a href="#" class="navbar-menu__link">О компании</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#" class="navbar-menu__link">Услуги</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#" class="navbar-menu__link">Прайс-лист</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#" class="navbar-menu__link">Экспертиза</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#" class="navbar-menu__link">Города</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#" class="navbar-menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- Menu -->
     </header>
 
 
