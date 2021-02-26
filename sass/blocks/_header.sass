@@ -1,22 +1,52 @@
 .header
-    background: $header-bg
+    background: $secondary
     &-container
         padding: 48px 0 32px 0
         display: flex
         justify-content: space-between
+        align-items: center
     &-toggle
         display: none
-        visibility: hidden
+        // visibility: hidden
     &-logo
         max-width: 300px
         max-height: 78px
     &-infobox
         display: flex
         justify-content: space-between
-        max-width: 645px
+        max-width: 695px
+        &__address
+            max-width: 200px
+            margin-right: 104px
+        &__schedule
+            max-width: 136px
+            margin-right: 104px
+        &__contact
+            max-width: 156px
+        &__title
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 21px
+            color: $infoblock-title
+        &__descr
+            display: block
+            font-size: 16px
+            line-height: 19px
+            color: $primary
+            margin-top: 8px
+            margin-bottom: 0
+        &__link
+            display: block
+            font-size: 16px
+            line-height: 19px
+            color: $primary
+            margin-top: 8px
+            margin-bottom: 0
+            text-decoration: none
 
 .navbar
-    background: #102444
+    background: $primary
     color: #fff
     &-container
         display: flex
@@ -36,5 +66,77 @@
             font-weight: normal
             font-size: 24px
             line-height: 28px
-            color: $menu-item
+            color: $secondary
             text-decoration: none
+
+// Адаптивность
+@media(max-width: 1540px)
+    .container
+        padding-left: 10px
+        padding-right: 10px
+@media(max-width: 1200px)
+    .header
+        &-container
+            padding-top: 20px
+            padding-bottom: 20px
+        &-logo
+            max-width: 240px
+        &-infobox
+            max-width: 550px
+            &__address
+                margin-right: 50px
+            &__schedule
+                margin-right: 50px
+            &__title
+                font-size: 16px
+                line-height: 18px
+            &__descr, &__link
+                font-size: 14px
+                line-height: 16px
+
+    .navbar
+        &-container
+            padding-top: 15px
+            padding-bottom: 15px
+        &-menu
+            &__link
+                font-size: 15px
+@media(max-width: 992px)
+    .navbar-menu__item:not(:last-child)
+        margin-right: 25px
+    .header-infobox__schedule
+        display: none
+@media(max-width: 768px)
+    .header
+        &-logo
+            max-width: 185px
+        &-container
+            padding-top: 15px
+            padding-bottom: 10px
+        &-infobox
+            &__address
+                display: none
+            &__contact
+                display: none
+        &-toggle
+            display: block
+            width: 40px
+            height: 40px
+            background: url(../img/menu.png)
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 30px
+            cursor: pointer
+            filter: invert(1)
+            transition: 0.2s
+            &__active
+                display: block
+                background: url(../img/close.png)
+                background-position: center
+                background-repeat: no-repeat
+                background-size: 25px
+                cursor: pointer
+                transition: 0.2s
+    .navbar
+        display: none
+// 992, 768, 576, 320
