@@ -17,6 +17,10 @@ button {
   outline: none;
   cursor: pointer; }
 
+a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -518,4 +522,72 @@ template {
         margin-bottom: 10px; }
     .navbar-active {
       left: 0; } }
+
+.hero {
+  width: 100vw;
+  position: relative; }
+  .hero-slider {
+    height: 100%;
+    width: 100%; }
+    .hero-slider__slide {
+      height: 582px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .hero-slider__slide--1 {
+      background-image: url(../img/slider/1.jpg); }
+    .hero-slider__slide--2 {
+      background-image: url(../img/slider/2.jpg); }
+    .hero-slider__slide--3 {
+      background-image: url(../img/slider/3.jpg); }
+  .hero-info {
+    position: absolute;
+    top: 179px;
+    left: 0;
+    width: 55%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 25px;
+    padding-left: calc(50% - 760px);
+    background: rgba(240, 240, 241, 0.38);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px); }
+    .hero-info__title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 41px;
+      color: #102444;
+      margin: 0 0 16px 0; }
+    .hero-info__descr {
+      font-size: 18px;
+      line-height: 23px;
+      color: #102444; }
+  .hero-dots {
+    position: absolute;
+    bottom: 179px;
+    left: 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none; }
+    .hero-dots button {
+      background: transparent;
+      border: none;
+      text-align: left;
+      padding-left: 0;
+      padding-bottom: 5px;
+      font-size: 20px;
+      line-height: 26px;
+      color: #102444;
+      outline: none;
+      width: 32px;
+      height: 32px;
+      border-bottom: 1px solid #102444;
+      margin-right: 16px; }
+    .hero-dots .slick-active button {
+      width: 96px;
+      border-bottom: 3px solid #8E322E;
+      color: #8E322E; }
 /*# sourceMappingURL=style.css.map */

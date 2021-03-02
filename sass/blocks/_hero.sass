@@ -1,0 +1,66 @@
+.hero
+    width: 100vw
+    position: relative
+    &-slider
+        height: 100%
+        width: 100%
+        &__slide
+            height: 582px
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: cover
+
+        &__slide--1
+            background-image: url(../img/slider/1.jpg)
+        &__slide--2
+            background-image: url(../img/slider/2.jpg)
+        &__slide--3
+            background-image: url(../img/slider/3.jpg)
+    &-info
+        position: absolute
+        top: 179px
+        left: 0
+        width: 55%
+        padding-top: 32px
+        padding-bottom: 32px
+        padding-right: 25px
+        padding-left: calc(50% - 760px)
+        background: rgba(240, 240, 241, 0.38)
+        backdrop-filter: blur(5px)
+        &__title
+            font-style: normal
+            font-weight: bold
+            font-size: 32px
+            line-height: 41px
+            color: $primary
+            margin: 0 0 16px 0
+        &__descr
+            font-size: 18px
+            line-height: 23px
+            color: $primary
+    &-dots
+        position: absolute
+        bottom: 179px
+        left: 0
+        text-align: center
+        display: flex
+        list-style: none
+        button
+            background: transparent
+            border: none
+            text-align: left
+            padding-left: 0
+            padding-bottom: 5px
+            font-size: 20px
+            line-height: 26px
+            color: $primary
+            outline: none
+            width: 32px
+            height: 32px
+            border-bottom: 1px solid $primary
+            margin-right: 16px
+        .slick-active
+            button
+                width: 96px
+                border-bottom: 3px solid $accent
+                color: $accent
