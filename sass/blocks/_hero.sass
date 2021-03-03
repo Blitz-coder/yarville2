@@ -1,5 +1,5 @@
 .hero
-    width: 100vw
+    width: 100%
     position: relative
     &-slider
         height: 100%
@@ -25,7 +25,7 @@
         padding-bottom: 32px
         padding-right: 25px
         padding-left: calc(50% - 760px)
-        background: rgba(240, 240, 241, 0.38)
+        background: rgba(240, 240, 241, 0.68)
         backdrop-filter: blur(5px)
         &__title
             font-style: normal
@@ -45,11 +45,12 @@
         text-align: center
         display: flex
         list-style: none
-        background: rgba(240, 240, 241, 0.38)
+        background: rgba(240, 240, 241, 0.68)
         backdrop-filter: blur(5px)
         padding-top: 15px
         padding-right: 15px
         padding-bottom: 15px
+        padding-left: calc(50% - 760px)
         button
             background: transparent
             border: none
@@ -69,3 +70,96 @@
                 width: 96px
                 border-bottom: 3px solid $accent
                 color: $accent
+    &-form
+        position: absolute
+        top: 90px
+        right: calc(50% - 660px)
+        padding: 32px 38px
+        background: $secondary
+        border-radius: 16px
+        width: 400px
+        &__title
+            font-weight: bold
+            font-size: 24px
+            line-height: 26px
+            color: $primary
+            margin: 0 0 24px 0
+        &__description
+            font-size: 18px
+            line-height: 23px
+            color: $primary
+            margin-bottom: 20px
+        &__input
+            width: 100%
+            margin-bottom: 8px
+            padding: 19px 20px
+            border-radius: 8px
+            border: 1px solid #C4C4C4
+            background: #EAEAEA
+            outline: none
+            color: #7D7D7D
+            &:focus
+                color: $primary
+        &__submit
+            width: 100%
+            margin-top: 14px
+            background: $accent
+            padding: 18px 15px
+            border-radius: 8px
+            border: none
+            outline: none
+            font-weight: bold
+            font-size: 18px
+            line-height: 26px
+            color: $secondary
+            text-align: center
+@media(max-width: 1540px)
+    .hero
+        &-info
+            padding-left: 15px
+        &-dots
+            padding-left: 15px
+            bottom: 100px
+        &-form
+            right: 100px
+@media(max-width: 1200px)
+    .hero
+        &-info
+            width: 50%
+            top: 155px
+        &-dots
+        &-form
+            right: 20px
+@media(max-width: 930px)
+    .hero
+        &-info
+            width: 70%
+            left: 15%
+            padding: 32px 25px
+            &__title
+                font-size: 24px
+                text-align: center
+            &__descr
+                font-size: 14px
+                text-align: center
+        &-dots
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 45px
+            button
+                font-size: 16px
+            .slick-active
+                button
+                    width: 60px
+        &-form
+            display: none
+@media(max-width: 576px)
+    .hero
+        &-info
+            width: 90%
+            left: 5%
+            padding: 28px 15px
+            &__title
+                font-size: 22px
+        &-dots
+            bottom: 15px
