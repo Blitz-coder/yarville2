@@ -1,14 +1,85 @@
 .advantage
     &-container
-        padding: 64px 0 10px 0
+        padding: 0 0 44px 0
     &-title
         text-align: center
         color: $primary
         font-weight: bold
         font-size: 32px
         line-height: 41px
-        margin-top: 0
-        margin-bottom: 48px
+        margin: 0
+        background: #F4FBFF
+        max-width: 63%
+        text-align: right
+        padding-right: 28px
+        padding-top: 64px
+        padding-bottom: 15px
+        margin-bottom: 33px
     &-wrapper
         display: flex
-        justify-content: space-between
+        justify-content: center
+        align-items: start
+        flex-wrap: wrap
+    &-card
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+        min-width: 230px
+        max-width: 20%
+
+        padding: 10px 25px 20px 25px
+        margin-bottom: 20px
+        text-align: center
+        &__icon
+            height: 48px
+            width: 48px
+            margin-bottom: 4px
+        &__title
+            font-weight: bold
+            font-size: 18px
+            line-height: 26px
+            color: $accent
+            margin-bottom: 8px
+        &__descr
+            font-size: 16px
+            line-height: 20px
+            color: $primary
+            margin: 0
+@media(max-width: 1400px)
+    .advantage
+        &-card
+            max-width: 30%
+@media(max-width: 1200px)
+    .advantage
+        &-title
+            max-width: 67%
+        &-wrapper
+            flex-wrap: wrap
+        &-card
+            &__title
+                font-size: 16px
+            &__descr
+                font-size: 14px
+@media(max-width: 991px)
+    .advantage
+        &-title
+            font-size: 24px
+            max-width: 67%
+        &-card
+            max-width: 50%
+@media(max-width: 768px)
+    .advantage
+        &-title
+            font-size: 24px
+            max-width: 100%
+            padding-left: 10px
+            padding-right: 10px
+            text-align: center
+@media(max-width: 576px)
+    .advantage
+        &-title
+            font-size: 22px
+        &-card
+            max-width: 100%
+            margin-bottom: 10px

@@ -691,7 +691,7 @@ template {
     bottom: 15px; } }
 
 .advantage-container {
-  padding: 64px 0 10px 0; }
+  padding: 0 0 44px 0; }
 
 .advantage-title {
   text-align: center;
@@ -699,14 +699,97 @@ template {
   font-weight: bold;
   font-size: 32px;
   line-height: 41px;
-  margin-top: 0;
-  margin-bottom: 48px; }
+  margin: 0;
+  background: #F4FBFF;
+  max-width: 63%;
+  text-align: right;
+  padding-right: 28px;
+  padding-top: 64px;
+  padding-bottom: 15px;
+  margin-bottom: 33px; }
 
 .advantage-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.advantage-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 230px;
+  max-width: 20%;
+  padding: 10px 25px 20px 25px;
+  margin-bottom: 20px;
+  text-align: center; }
+  .advantage-card__icon {
+    height: 48px;
+    width: 48px;
+    margin-bottom: 4px; }
+  .advantage-card__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: #8E322E;
+    margin-bottom: 8px; }
+  .advantage-card__descr {
+    font-size: 16px;
+    line-height: 20px;
+    color: #102444;
+    margin: 0; }
+
+@media (max-width: 1400px) {
+  .advantage-card {
+    max-width: 30%; } }
+
+@media (max-width: 1200px) {
+  .advantage-title {
+    max-width: 67%; }
+  .advantage-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .advantage-card__title {
+    font-size: 16px; }
+  .advantage-card__descr {
+    font-size: 14px; } }
+
+@media (max-width: 991px) {
+  .advantage-title {
+    font-size: 24px;
+    max-width: 67%; }
+  .advantage-card {
+    max-width: 50%; } }
+
+@media (max-width: 768px) {
+  .advantage-title {
+    font-size: 24px;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center; } }
+
+@media (max-width: 576px) {
+  .advantage-title {
+    font-size: 22px; }
+  .advantage-card {
+    max-width: 100%;
+    margin-bottom: 10px; } }
 /*# sourceMappingURL=style.css.map */
