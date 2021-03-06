@@ -849,7 +849,7 @@ template {
     color: #102444;
     text-overflow: ellipsis;
     line-clamp: 3; }
-  .service-card__btn {
+  .service-card__price {
     padding: 16px;
     border: none;
     outline: none;
@@ -873,7 +873,7 @@ template {
     font-size: 20px; }
   .service-card__descr {
     font-size: 16px; }
-  .service-card__btn {
+  .service-card__price {
     font-size: 16px; } }
 
 @media (max-width: 1260px) {
@@ -881,7 +881,7 @@ template {
     font-size: 18px; }
   .service-card__descr {
     font-size: 14px; }
-  .service-card__btn {
+  .service-card__price {
     font-size: 14px; } }
 
 @media (max-width: 992px) {
@@ -905,6 +905,6 @@ template {
       font-size: 18px; }
     .service-card__descr {
       font-size: 14px; }
-    .service-card__btn {
+    .service-card__price {
       font-size: 14px; } }
 /*# sourceMappingURL=style.css.map */
