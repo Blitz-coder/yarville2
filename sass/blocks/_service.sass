@@ -25,7 +25,7 @@
             object-fit: cover
         &__info
             width: 100%
-            min-height: 164px
+            height: 225px
             padding: 24px 24px 32px 24px
             background: rgba(240, 240, 241, 0.64)
             backdrop-filter: blur(10px)
@@ -95,9 +95,14 @@
             margin-right: 0px
             &:not(:last-child)
                 margin-right: 0px
+            &__info
+                height: 164px
             &__title
                 font-size: 18px
             &__descr
                 font-size: 14px
             &__price
                 font-size: 14px
+@media(max-width: 460px)
+    .service-card__info
+        height: 245px

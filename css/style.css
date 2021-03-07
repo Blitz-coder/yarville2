@@ -827,7 +827,7 @@ template {
        object-fit: cover; }
   .service-card__info {
     width: 100%;
-    min-height: 164px;
+    height: 225px;
     padding: 24px 24px 32px 24px;
     background: rgba(240, 240, 241, 0.64);
     -webkit-backdrop-filter: blur(10px);
@@ -901,10 +901,103 @@ template {
     margin-right: 0px; }
     .service-card:not(:last-child) {
       margin-right: 0px; }
+    .service-card__info {
+      height: 164px; }
     .service-card__title {
       font-size: 18px; }
     .service-card__descr {
       font-size: 14px; }
     .service-card__price {
       font-size: 14px; } }
+
+@media (max-width: 460px) {
+  .service-card__info {
+    height: 245px; } }
+
+.partner-container {
+  padding-top: 25px;
+  padding-bottom: 30px; }
+
+.partner-line {
+  width: 340px;
+  margin-bottom: 25px;
+  margin-left: 0;
+  margin-right: 0;
+  color: #669BBB;
+  size: 1px; }
+
+.partner-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.partner-title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 41px;
+  color: #102444;
+  margin-top: 0;
+  margin-bottom: 17px;
+  margin-left: 96px;
+  margin-right: 96px; }
+
+.partner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.partner-logo {
+  margin-left: 64px;
+  margin-right: 64px;
+  max-width: 200px; }
+
+@media (max-width: 1200px) {
+  .partner-title {
+    margin-left: 45px;
+    margin-right: 45px; }
+  .partner-line {
+    width: 33%; }
+  .partner-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .partner-logo {
+    margin-left: 10px;
+    margin-right: 10px; } }
+
+@media (max-width: 1040px) {
+  .partner-line {
+    width: 25%; } }
+
+@media (max-width: 992px) {
+  .partner-title {
+    font-size: 24px; }
+  .partner-line {
+    width: 20%; }
+  .partner-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .partner-logo {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px; } }
+
+@media (max-width: 576px) {
+  .partner-line {
+    display: none; } }
 /*# sourceMappingURL=style.css.map */
