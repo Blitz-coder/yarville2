@@ -25,6 +25,18 @@ $(document).ready(function () {
       lazyload: 'progressive'
       });
 
+      $('.about-slider').slick({
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        pauseOnHover: false,
+        fade: true,
+        arrows: false,
+        dots: true,
+        dotsClass: 'about-dots',
+        fadeSpeed: 1000,
+        lazyload: 'progressive'
+        });
+  
 
 });
 
