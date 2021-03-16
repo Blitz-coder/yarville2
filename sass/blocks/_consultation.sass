@@ -1,0 +1,82 @@
+.consult
+    background: $accent
+    height: 72px
+    padding-top: 24px
+    width: 100%
+    margin-bottom: 100px
+    &-container
+        max-width: 1057px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0 auto 0 auto
+    &-info
+    &-title
+        display: block
+        font-weight: bold
+        font-size: 36px
+        line-height: 30px
+        color: $secondary
+        margin-bottom: 16px
+    &-subtitle
+        font-weight: bold
+        font-size: 48px
+        line-height: 60px
+        color: $primary
+        text-transform: uppercase
+    &-button
+        padding: 24px 40px
+        background: $primary
+        border: none
+        outline: none
+        font-weight: bold
+        font-size: 24px
+        line-height: 26px
+        color: $secondary
+@media(max-width: 1200px)
+    .consult
+        &-container
+            padding-left: 15px
+            padding-right: 15px
+        &-title
+            font-size: 24px
+        &-subtitle
+            font-size: 30px
+        &-button
+            font-size: 20px
+@media(max-width: 850px)
+    .consult
+        &-container
+
+        &-title
+            font-size: 22px
+        &-subtitle
+            font-size: 28px
+        &-button
+            font-size: 16px
+            padding: 18px 25px
+@media(max-width: 700px)
+    .consult
+        margin-bottom: 155px
+        &-container
+            flex-direction: column
+            align-items: center
+        &-info
+            text-align: center
+        &-subtitle
+            text-align: center
+        &-button
+            margin-top: 10px
+
+@media(max-width: 439px)
+    .consult
+        height: 100px
+@media(max-width: 382px)
+    .consult
+        &-title
+            padding-bottom: 15px
+        &-subtitle
+            font-size: 24px
+            line-height: 30px
+        &-button
+            margin-top: 15px
