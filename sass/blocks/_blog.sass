@@ -1,5 +1,5 @@
 .blog
-    border: 1px solid tomato
+
     padding-top: 44px
     padding-bottom: 20px
     margin-top: 100px
@@ -17,11 +17,14 @@
         justify-content: space-between
         align-items: start
         flex-wrap: wrap
+        min-height: 285px
     &-card
-        width: 30%
+        width: 32%
         padding-top: 24px
         padding-bottom: 24px
         box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1)
+        margin-left: 5px
+        margin-right: 5px
         &__category
             font-size: 14px
             line-height: 18px
@@ -42,7 +45,7 @@
         &__info
             padding-left: 24px
             padding-right: 24px
-            height: 285px
+            min-height: 326px
             overflow: hidden
             text-overflow: ellipsis
             display: -webkit-box
@@ -59,7 +62,7 @@
             font-size: 18px
             line-height: 23px
             color: #000
-            max-height: 230px
+            height: 230px
             overflow: hidden
             text-overflow: ellipsis
     &-thumb
@@ -81,3 +84,40 @@
         text-align: right
         text-decoration-line: underline
         color: $primary
+
+@media(max-width: 1470px)
+    .blog
+        &-card
+            &__title
+                font-size: 22px
+@media(max-width: 1310px)
+    .blog
+        &-card
+            &__title
+                font-size: 20px
+            &__descr
+                font-size: 16px
+@media(max-width: 845px)
+    .blog
+        &-title
+            margin-bottom: 10px
+            font-size: 42px
+            text-align: center
+        &-card
+            &__title
+                font-size: 20px
+            &__descr
+                font-size: 14px
+@media(max-width: 768px)
+    .blog
+        &-wrapper
+            flex-wrap: wrap
+            justify-content: center
+        &-card
+            width: 90%
+            margin-bottom: 30px
+            &__info
+                min-height: 200px
+
+            &__descr
+                height: 100%
