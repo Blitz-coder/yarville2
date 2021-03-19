@@ -1,13 +1,14 @@
 .faq
     position: relative
     background: linear-gradient(264.6deg, #EBEBEB 0%, rgba(255, 255, 255, 0) 95.68%)
-
     background-image: url('../img/faq-bg.png')
     background-repeat: no-repeat
     background-position: right top
     background-size: 800px
     overflow-x: hidden
     object-fit: cover
+    padding-bottom: 60px
+    margin-bottom: 200px
     &::before
         position: absolute
         z-index: -1
@@ -39,8 +40,7 @@
             padding-top: 8px
             border-top: 1px solid #669BBB
     &-wrapper
-        width: 50%
-        border: 1px solid tomato
+        width: 770px
         display: flex
         justify-content: space-between
         flex-wrap: wrap
@@ -70,3 +70,28 @@
 
     100%
         opacity: 1
+
+@media(max-width: 845px)
+    .faq
+        background-image: none
+        &::before
+            height: 100%
+            width: 100%
+            background: linear-gradient(264.6deg, #EBEBEB 0%, rgba(255, 255, 255, 0) 95.68%)
+        &-header
+            flex-direction: column
+            align-items: center
+            &__title
+                font-size: 42px
+        &-subheader
+            padding-top: 0px
+        &-wrapper
+            width: 95%
+            margin: auto
+@media(max-width: 768px)
+    .faq
+        &-quest
+            max-width: 100%
+            margin-bottom: 20px
+            &__response
+                margin-bottom: 0

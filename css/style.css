@@ -1589,7 +1589,9 @@ template {
   background-size: 800px;
   overflow-x: hidden;
   -o-object-fit: cover;
-     object-fit: cover; }
+     object-fit: cover;
+  padding-bottom: 60px;
+  margin-bottom: 200px; }
   .faq::before {
     position: absolute;
     z-index: -1;
@@ -1625,8 +1627,7 @@ template {
       padding-top: 8px;
       border-top: 1px solid #669BBB; }
   .faq-wrapper {
-    width: 50%;
-    border: 1px solid tomato;
+    width: 770px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1668,4 +1669,34 @@ template {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
+@media (max-width: 845px) {
+  .faq {
+    background-image: none; }
+    .faq::before {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(264.6deg, #EBEBEB 0%, rgba(255, 255, 255, 0) 95.68%); }
+    .faq-header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .faq-header__title {
+        font-size: 42px; }
+    .faq-subheader {
+      padding-top: 0px; }
+    .faq-wrapper {
+      width: 95%;
+      margin: auto; } }
+
+@media (max-width: 768px) {
+  .faq-quest {
+    max-width: 100%;
+    margin-bottom: 20px; }
+    .faq-quest__response {
+      margin-bottom: 0; } }
 /*# sourceMappingURL=style.css.map */
