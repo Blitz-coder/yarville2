@@ -1453,7 +1453,7 @@ template {
   padding-top: 44px;
   padding-bottom: 20px;
   margin-top: 100px;
-  margin-bottom: 200px; }
+  margin-bottom: 50px; }
   .blog-title {
     font-weight: bold;
     font-size: 64px;
@@ -1579,4 +1579,93 @@ template {
       min-height: 200px; }
     .blog-card__descr {
       height: 100%; } }
+
+.faq {
+  position: relative;
+  background: linear-gradient(264.6deg, #EBEBEB 0%, rgba(255, 255, 255, 0) 95.68%);
+  background-image: url("../img/faq-bg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 800px;
+  overflow-x: hidden;
+  -o-object-fit: cover;
+     object-fit: cover; }
+  .faq::before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: calc(100% - 800px);
+    background: linear-gradient(264.6deg, #EBEBEB 0%, rgba(255, 255, 255, 0) 95.68%); }
+  .faq-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-bottom: 27px; }
+    .faq-header__title {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 8px;
+      font-size: 64px;
+      line-height: 80px;
+      color: rgba(16, 36, 68, 0.32); }
+  .faq-subheader {
+    padding-top: 45px; }
+    .faq-subheader__subtitle {
+      font-size: 18px;
+      line-height: 23px;
+      color: #102444;
+      padding-top: 8px;
+      border-top: 1px solid #669BBB; }
+  .faq-wrapper {
+    width: 50%;
+    border: 1px solid tomato;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .faq-quest {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000;
+    text-decoration: none;
+    max-width: 350px;
+    margin-bottom: 30px; }
+    .faq-quest[open] summary ~ * {
+      -webkit-animation: sweep 0.5s ease-in-out;
+              animation: sweep 0.5s ease-in-out; }
+    .faq-quest__response {
+      font-weight: normal;
+      font-size: 14px;
+      -webkit-transition: 3s;
+      transition: 3s; }
+    .faq-quest__title {
+      border: none;
+      outline: none;
+      cursor: pointer; }
+
+@-webkit-keyframes "sweep" {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes "sweep" {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 /*# sourceMappingURL=style.css.map */
