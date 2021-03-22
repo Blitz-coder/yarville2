@@ -1699,4 +1699,46 @@ template {
     margin-bottom: 20px; }
     .faq-quest__response {
       margin-bottom: 0; } }
+
+.city {
+  margin-top: 30px;
+  margin-bottom: 88px; }
+  .city-container {
+    padding-bottom: 30px; }
+  .city-title {
+    font-size: 18px;
+    line-height: 21px;
+    color: #102444;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 32px; }
+  .city-list {
+    list-style-position: inside;
+    -webkit-column-count: 8;
+    column-count: 8;
+    list-style: none;
+    padding-left: 0; }
+  .city-link {
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #000; }
+
+@media (max-width: 1200px) {
+  .city-list {
+    -webkit-column-count: 5;
+    column-count: 5; } }
+
+@media (max-width: 875px) {
+  .city-list {
+    -webkit-column-count: 2;
+    column-count: 3; }
+  .city-link {
+    font-size: 16px; } }
+
+@media (max-width: 480px) {
+  .city {
+    display: none;
+    visibility: hidden;
+    opacity: 0; } }
 /*# sourceMappingURL=style.css.map */
