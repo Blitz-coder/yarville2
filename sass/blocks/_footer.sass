@@ -1,22 +1,29 @@
 .footer
     padding: 40px 0 52px 0
     background-color: #052953
-    margin-bottom: 200px
     &-container
         display: flex
         justify-content: space-between
     &-col
         &--1
-            flex: 0 0 410px
+            flex: 0 1 410px
             display: flex
             flex-direction: column
             align-items: center
+            padding-left: 5px
+            padding-right: 5px
         &--2
             flex: 0 0 200px
+            padding-left: 5px
+            padding-right: 5px
         &--3
             flex: 0 0 285px
+            padding-left: 5px
+            padding-right: 5px
         &--4
-            flex: 0 0 400px
+            flex: 0 1 400px
+            padding-left: 5px
+            padding-right: 5px
     &-logo
         display: block
         max-height: 114px
@@ -82,3 +89,77 @@
             line-height: 26px
             color: $secondary
             text-decoration: none
+    &-policy
+        margin-bottom: 16px
+        &__link
+            font-size: 16px
+            line-height: 20px
+            text-decoration-line: underline
+            color: $secondary
+        &__info
+            font-size: 14px
+            line-height: 18px
+            color: $secondary
+    &-copywrite
+        display: block
+        text-align: right
+
+@media(max-width: 1310px)
+    .footer
+        &-info
+            font-size: 14px
+
+@media(max-width: 1080px)
+    .footer-btn
+        width: 255px
+
+@media(max-width: 1040px)
+    .footer
+        &-container
+            flex-wrap: wrap
+
+        &-col--4
+            flex: 0 0 70%
+            max-width: 100%
+            margin-top: 40px
+
+@media(max-width: 915px)
+    .footer
+        &-col--1
+            flex: 0 0 70%
+            max-width: 70%
+        &-col--2
+            flex: 0 0 30%
+            max-width: 30%
+        &-col--3
+            flex: 0 0 30%
+            max-width: 30%
+            margin-top: 40px
+
+@media(max-width: 725px)
+    .footer
+        &-col--1
+            flex: 0 0 100%
+            max-width: 100%
+        &-col--2
+            flex: 0 0 50%
+            max-width: 50%
+            margin-top: 40px
+        &-col--3
+            flex: 0 0 50%
+            max-width: 50%
+        &-col--4
+            flex: 0 0 100%
+            max-width: 100%
+            margin-top: 40px
+@media(max-width: 725px)
+    .footer
+        &-col--2
+            flex: 0 0 100%
+            max-width: 100%
+        &-col--3
+            flex: 0 0 100%
+            max-width: 100%
+            margin-top: 20px
+        &-col--4
+            margin-top: 20px
