@@ -69,17 +69,17 @@ $(document).ready(function () {
        function showYaMaps(){
         var script1   = document.createElement("script");
         script1.type  = "text/javascript";
-        script1.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab0f817a0a68f03c25c388c781a0fd54a849d5a8dd0ff8aee7dcd4a132a0520b0&amp;width=474&amp;height=300&amp;lang=ru_RU&amp;scroll=false";
+        script1.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab0f817a0a68f03c25c388c781a0fd54a849d5a8dd0ff8aee7dcd4a132a0520b0&amp;width=100%;height=300&amp;lang=ru_RU&amp;scroll=false";
         document.querySelector(".maps-card--1").appendChild(script1);
         
         var script2   = document.createElement("script");
         script2.type  = "text/javascript";
-        script2.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9cf4c2ea469759abbb634c1bb68dcfb9f62fd10a1eb82be617a8b1bd4ed5019b&amp;width=474&amp;height=300&amp;lang=ru_RU&amp;scroll=false";
+        script2.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9cf4c2ea469759abbb634c1bb68dcfb9f62fd10a1eb82be617a8b1bd4ed5019b&amp;width=100%;height=300&amp;lang=ru_RU&amp;scroll=false";
         document.querySelector(".maps-card--2").appendChild(script2);
         
         var script3   = document.createElement("script");
         script3.type  = "text/javascript";
-        script3.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab2b930ea2124278698b67f9f7f6ac6d4273641248f1c55ea137c202b3d4ccf32&amp;width=474&amp;height=300&amp;lang=ru_RU&amp;scroll=false";
+        script3.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab2b930ea2124278698b67f9f7f6ac6d4273641248f1c55ea137c202b3d4ccf32&amp;width=100%;height=300&amp;lang=ru_RU&amp;scroll=false";
         document.querySelector(".maps-card--3").appendChild(script3);
 
        }
