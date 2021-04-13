@@ -15,14 +15,27 @@ img {
 
 button {
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 a {
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .body-fixed {
   overflow-y: hidden; }
+
+@media (min-width: 998px) {
+  a:hover {
+    color: #8E322E; }
+  .footer-social__link:hover {
+    -webkit-transform: scale(1.3, 1.3);
+            transform: scale(1.3, 1.3); }
+  button:hover {
+    background: #8E0A05; }
+  .modal-form__close:hover {
+    color: #8E322E; } }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -1392,6 +1405,7 @@ template {
     padding: 24px 40px;
     background: #102444;
     border: none;
+    border-radius: 8px;
     outline: none;
     font-weight: bold;
     font-size: 24px;
@@ -1951,7 +1965,9 @@ template {
     display: inline-block;
     height: 32px;
     height: 32px;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
   .footer-social__link:not(:last-child) {
     margin-right: 16px; }
   .footer-messenger {
@@ -2069,4 +2085,81 @@ template {
     margin-top: 20px; }
   .footer-col--4 {
     margin-top: 20px; } }
+
+.modal {
+  min-height: 100vh;
+  height: 100vh;
+  min-width: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .modal-active {
+    visibility: visible;
+    opacity: 1; }
+  .modal-form {
+    position: relative;
+    padding: 32px 38px;
+    background: #F0F0F1;
+    border-radius: 16px;
+    width: 400px; }
+    .modal-form__title {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 26px;
+      color: #102444;
+      margin: 0 0 24px 0; }
+    .modal-form__description {
+      font-size: 18px;
+      line-height: 23px;
+      color: #102444;
+      margin-bottom: 20px; }
+    .modal-form__input {
+      width: 100%;
+      margin-bottom: 8px;
+      padding: 19px 20px;
+      border-radius: 8px;
+      border: 1px solid #C4C4C4;
+      background: #EAEAEA;
+      outline: none;
+      color: #7D7D7D; }
+      .modal-form__input:focus {
+        color: #102444; }
+    .modal-form__submit {
+      width: 100%;
+      margin-top: 14px;
+      background: #8E322E;
+      padding: 18px 15px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 26px;
+      color: #F0F0F1;
+      text-align: center; }
+    .modal-form__close {
+      font-size: 42px;
+      color: #102444;
+      position: absolute;
+      top: 0px;
+      right: 15px;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
 /*# sourceMappingURL=style.css.map */

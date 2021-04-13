@@ -157,7 +157,7 @@
                         <p class="service-card__descr">В зависимости от типа недвижимости, расположения, площади, цели
                             оценки, срочности исполнения заказа.</p>
                     </div>
-                    <button class="service-card__price">от 2 500 р</button>
+                    <span class="service-card__price">от 2 500 р</span>
                 </div>
                 <!-- /.service-card -->
                 <div class="service-card">
@@ -167,7 +167,7 @@
                         <p class="service-card__descr">Дешевле всего — оценка легкового транспорта для нотариуса. В
                             остальных случаях зависит от конкретных требований.</p>
                     </div>
-                    <button class="service-card__price">от 2 500 р</button>
+                    <span class="service-card__price">от 2 500 р</span>
                 </div>
                 <!-- /.service-card -->
                 <div class="service-card">
@@ -716,6 +716,22 @@
         </div>
     </footer>
     <!-- /.footer -->
+
+    <!-- modal -->
+    <div class="modal modal-active">
+        <div class="container modal-container">
+            <form action="#" class="modal-form">
+                <span class="modal-form__title">Оставьте заявку</span>
+                <p class="modal-form__description">Обращайтесь прямо сейчас и получите первую консультацию</p>
+                <input type="text" class="modal-form__input" placeholder="Имя">
+                <input type="text" class="modal-form__input" placeholder="Телефон">
+                <button class="modal-form__submit">Получить консультацию эксперта</button>
+                <span class="modal-form__close">&times;</span>
+            </form>
+        </div>
+
+    </div>
+    <!-- end modal -->
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>

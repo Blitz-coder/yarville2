@@ -1,0 +1,70 @@
+.modal
+    min-height: 100vh
+    height: 100vh
+    min-width: 100%
+    width: 100%
+    background: rgba(0,0,0,0.9)
+    display: flex
+    justify-content: center
+    align-items: center
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 999
+    visibility: hidden
+    opacity: 0
+    transition: all 0.3s ease
+    &-active
+        visibility: visible
+        opacity: 1
+    &-container
+
+    &-form
+        position: relative
+        padding: 32px 38px
+        background: $secondary
+        border-radius: 16px
+        width: 400px
+        &__title
+            font-weight: bold
+            font-size: 24px
+            line-height: 26px
+            color: $primary
+            margin: 0 0 24px 0
+        &__description
+            font-size: 18px
+            line-height: 23px
+            color: $primary
+            margin-bottom: 20px
+        &__input
+            width: 100%
+            margin-bottom: 8px
+            padding: 19px 20px
+            border-radius: 8px
+            border: 1px solid #C4C4C4
+            background: #EAEAEA
+            outline: none
+            color: #7D7D7D
+            &:focus
+                color: $primary
+        &__submit
+            width: 100%
+            margin-top: 14px
+            background: $accent
+            padding: 18px 15px
+            border-radius: 8px
+            border: none
+            outline: none
+            font-weight: bold
+            font-size: 18px
+            line-height: 26px
+            color: $secondary
+            text-align: center
+        &__close
+            font-size: 42px
+            color: $primary
+            position: absolute
+            top: 0px
+            right: 15px
+            cursor: pointer
+            transition: all 0.3s ease
