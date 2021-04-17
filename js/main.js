@@ -84,6 +84,28 @@ $(document).ready(function () {
 
        }
 
+       var modalButton = $("[data-toggle=modal]");
+       var closeModalButton = $(".modal-form__close");
+       var closeModalOverlay = $(".modal");
+       modalButton.on('click', openModal);
+       closeModalButton.on('click', closeModal);
+
+       function openModal() {
+        var modalWindow = $('.modal');
+        modalWindow.addClass('modal-active');
+        document.getElementsByTagName("body")[0].style.overflow = "hidden";
+        console.log('Модалка появись')
+      }
+
+      function closeModal(event) {
+        event.preventDefault();
+        var modalWindow = $('.modal');
+        modalWindow.removeClass('modal-active');
+        document.getElementsByTagName("body")[0].style.overflow = "auto";
+        console.log('Модалка скройся')
+      }
+
+
 
 });
 

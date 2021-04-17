@@ -2091,7 +2091,7 @@ template {
   height: 100vh;
   min-width: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.8);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
