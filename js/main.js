@@ -93,17 +93,22 @@ $(document).ready(function () {
        function openModal() {
         var modalWindow = $('.modal');
         modalWindow.addClass('modal-active');
-        document.getElementsByTagName("body")[0].style.overflow = "hidden";
-        console.log('Модалка появись')
+        $("body").addClass("body-fixed");
       }
 
       function closeModal(event) {
         event.preventDefault();
         var modalWindow = $('.modal');
         modalWindow.removeClass('modal-active');
-        document.getElementsByTagName("body")[0].style.overflow = "auto";
-        console.log('Модалка скройся')
+        $("body").removeClass("body-fixed");
       }
+
+          //  Убрать модальное окно клавишей Esc
+      $(document).keydown(function (eventObject) {
+        if (eventObject.which == 27) {
+           closeModal(event);
+        };
+      });
 
 
 

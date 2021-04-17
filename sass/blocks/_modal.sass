@@ -14,6 +14,7 @@
     visibility: hidden
     opacity: 0
     transition: all 0.3s ease
+    overflow-y: auto
     &-active
         visibility: visible
         opacity: 1
@@ -26,6 +27,7 @@
         background: $secondary
         border-radius: 16px
         width: 400px
+
         &__title
             font-weight: bold
             font-size: 24px
@@ -46,6 +48,8 @@
             background: #EAEAEA
             outline: none
             color: #7D7D7D
+            font-size: 16px
+            line-height: 26px
             &:focus
                 color: $primary
         &__submit
@@ -69,3 +73,15 @@
             right: 15px
             cursor: pointer
             transition: all 0.3s ease
+@media(max-width: 400px)
+    .modal
+        &-form
+            width: 100%
+            padding: 25px 20px
+            &__submit
+                font-size: 14px
+            &__description
+                font-size: 14px
+            &__input
+                font-size: 15px
+                line-height: 20px

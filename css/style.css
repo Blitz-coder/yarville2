@@ -6,6 +6,11 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #fff; }
 
+.body-fixed {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
 .container {
   max-width: 1520px;
   margin: auto; }
@@ -2108,7 +2113,8 @@ template {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  overflow-y: auto; }
   .modal-active {
     visibility: visible;
     opacity: 1; }
@@ -2137,7 +2143,9 @@ template {
       border: 1px solid #C4C4C4;
       background: #EAEAEA;
       outline: none;
-      color: #7D7D7D; }
+      color: #7D7D7D;
+      font-size: 16px;
+      line-height: 26px; }
       .modal-form__input:focus {
         color: #102444; }
     .modal-form__submit {
@@ -2162,4 +2170,16 @@ template {
       cursor: pointer;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease; }
+
+@media (max-width: 400px) {
+  .modal-form {
+    width: 100%;
+    padding: 25px 20px; }
+    .modal-form__submit {
+      font-size: 14px; }
+    .modal-form__description {
+      font-size: 14px; }
+    .modal-form__input {
+      font-size: 15px;
+      line-height: 20px; } }
 /*# sourceMappingURL=style.css.map */
