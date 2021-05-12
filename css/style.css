@@ -31,6 +31,10 @@ a {
 .body-fixed {
   overflow-y: hidden; }
 
+.error {
+  color: #8E322E;
+  font-size: 12px; }
+
 @media (min-width: 998px) {
   a:hover {
     color: #8E322E; }
@@ -636,10 +640,10 @@ template {
       font-size: 18px;
       line-height: 23px;
       color: #102444;
-      margin-bottom: 20px; }
+      margin-bottom: 12px; }
     .hero-form__input {
       width: 100%;
-      margin-bottom: 8px;
+      margin-top: 8px;
       padding: 19px 20px;
       border-radius: 8px;
       border: 1px solid #C4C4C4;
@@ -2134,10 +2138,10 @@ template {
       font-size: 18px;
       line-height: 23px;
       color: #102444;
-      margin-bottom: 20px; }
+      margin-bottom: 12px; }
     .modal-form__input {
       width: 100%;
-      margin-bottom: 8px;
+      margin-top: 8px;
       padding: 19px 20px;
       border-radius: 8px;
       border: 1px solid #C4C4C4;

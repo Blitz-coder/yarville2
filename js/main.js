@@ -10,8 +10,6 @@
 };
 
 
-
-
 $(document).ready(function () {
 
     $('.hero-slider').slick({
@@ -109,6 +107,25 @@ $(document).ready(function () {
            closeModal(event);
         };
       });
+
+// Обработка форм
+$('.modal-form').validate({
+  messages: {
+    name: "Пожалуйста, укажите своё имя",
+    phone: {
+      required: "Укажите свой телефон",
+    }
+  }
+});
+
+$('.hero-form').validate({
+  messages: {
+    name: "Пожалуйста, укажите своё имя",
+    phone: {
+      required: "Укажите свой телефон",
+    }
+  }
+});
 
 
 
