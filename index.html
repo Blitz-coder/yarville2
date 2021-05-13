@@ -99,7 +99,8 @@
             <span class="hero-form__title">Оставьте заявку</span>
             <p class="hero-form__description">Обращайтесь прямо сейчас и получите первую консультацию</p>
             <input type="text" name="name" class="hero-form__input" placeholder="Имя" required minlength="2">
-            <input type="tel" name="phone" class="hero-form__input" id="phone" placeholder="Телефон" required>
+            <input type="tel" name="phone" class="hero-form__input" id="phone" placeholder="Телефон" minlength="15"
+                required>
             <button class="hero-form__submit">Получить консультацию эксперта</button>
         </form>
     </section>
@@ -727,7 +728,7 @@
                 <p class="modal-form__description">Обращайтесь прямо сейчас и получите первую консультацию</p>
                 <input type="text" name="name" class="modal-form__input" placeholder="Имя" required minlength="2">
                 <input type="tel" name="phone" id="modal-phone" class="modal-form__input" placeholder="Телефон"
-                    required>
+                    minlength="15" required>
                 <button class="modal-form__submit">Получить консультацию эксперта</button>
                 <span class="modal-form__close">&times;</span>
             </form>

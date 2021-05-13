@@ -1203,7 +1203,8 @@ template {
     -ms-flex-negative: 0;
         flex-shrink: 0; }
   .about-slide {
-    height: 600px; }
+    height: 600px;
+    outline: none; }
     .about-slide__img {
       width: 100%;
       height: 455px;

@@ -10,12 +10,15 @@ $phone = $_POST['phone'];
 
 
 // Формирование самого письма
-$title = "Новое обращение с сайта Yarville";
-$body = "
-<h2>Посетитель сайта просит перезвонить:</h2><br>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br>
-";
+if ((strlen($name) > 0) & (strlen($phone) > 0)){
+    $title = "Новое обращение с сайта Yarville";
+    $body = "
+    <h2>Посетитель сайта просит перезвонить:</h2><br>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br>
+    ";
+}
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
