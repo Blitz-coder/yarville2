@@ -110,6 +110,7 @@ $(document).ready(function () {
 
 // Обработка форм
 $('.modal-form').validate({
+  errorClass: "invalid",
   messages: {
     name: "Пожалуйста, укажите своё имя",
     phone: {
@@ -119,6 +120,7 @@ $('.modal-form').validate({
 });
 
 $('.hero-form').validate({
+  errorClass: "invalid",
   messages: {
     name: "Пожалуйста, укажите своё имя",
     phone: {
@@ -127,7 +129,8 @@ $('.hero-form').validate({
   }
 });
 
-
+$('#phone').mask('+7(000)-000-0000');
+$('#modal-phone').mask('+7(000)-000-0000');
 
 });
 

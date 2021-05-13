@@ -31,7 +31,7 @@ a {
 .body-fixed {
   overflow-y: hidden; }
 
-.error {
+.invalid {
   color: #8E322E;
   font-size: 12px; }
 
@@ -1606,7 +1606,7 @@ template {
 .faq {
   position: relative;
   background: linear-gradient(264.6deg, #EBEBEB 0%, rgba(255, 255, 255, 0) 95.68%);
-  background-image: url("../img/faq-bg.png");
+  background-image: url("../img/faq-bg.jpg");
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 800px;
